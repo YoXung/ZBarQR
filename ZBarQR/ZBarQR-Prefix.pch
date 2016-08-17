@@ -1,0 +1,61 @@
+//
+//  ZBarQR-Prefix.pch
+//  ZBarQR
+//
+//  Created by YaoXiang on 16/5/9.
+//  Copyright © 2016年 么翔的私房菜. All rights reserved.
+//
+
+#ifndef ZBarQR_Prefix_pch
+#define ZBarQR_Prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+// 过期
+#define YX_DEPRECATED_IOS(_iosIntro, _iosDep, ...) NS_DEPRECATED_IOS(_iosIntro, _iosDep, __VA_ARGS__)
+#define YX_AVAILABLE_IOS(_ios) NS_AVAILABLE_IOS(_ios)
+
+// UI
+#define STATUSBAR_HEIGHT        20
+#define NAVIGATIONBAR_HEIGHT    44
+#define MAINSCREEN_BOUNDS       [UIScreen mainScreen].bounds
+#define SCREEN_WIDTH            [UIScreen mainScreen].bounds.size.width
+#define SCREEN_HEIGHT           [UIScreen mainScreen].bounds.size.height
+#define RGBA(r,g,b,a)           [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a]
+
+// Delegate Use
+#ifndef PERFORM_DELEGATE_WITH_OBJ
+    #define PERFORM_DELEGATE_WITH_OBJ(DELEGATE, SEL, OBJ) \
+        if(DELEGATE && [DELEGATE respondsToSelector:@selector(SEL)]) { \
+            [DELEGATE performSelector:@selector(SEL) withObject:OBJ]; \
+        }
+#endif
+
+// Block
+#define WS(weakSelf)  __weak __typeof(&*self)weakSelf = self;
+
+// Singleton
+#define SYNTHESIZE_SINGLETON_FOR_HEADER(_className_,_methodName_) \
+    + (_className_ *)_methodName_;
+
+#define SYNTHESIZE_SINGLETON_FOR_CLASS(_className_,_methodName_) \
+    + (_className_ *)_methodName_ { \
+        static _className_ *_methodName_ = nil; \
+        static dispatch_once_t onceToken = 0; \
+        dispatch_once(&onceToken, ^{ \
+            _methodName_ = [[self alloc] init]; \
+        }); \
+        return _methodName_; \
+    }
+
+// Debug Log
+#ifdef DEBUG
+    #define DLog(format, ...) NSLog((@"%s (line %d) " format), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)
+#else
+    #define DLog(format, ...)
+#endif
+
+#endif /* ZBarQR_Prefix_pch */
+
+
