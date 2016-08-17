@@ -10,7 +10,7 @@
 #define SCAN_QR_CROP_SIDE        MIN(SCREEN_WIDTH, SCREEN_HEIGHT) * 3/5
 #define SCAN_BAR_CROP_WIDTH      SCREEN_WIDTH * 4/5
 #define SCAN_BAR_CROP_HEIGHT     MIN(SCREEN_WIDTH, SCREEN_HEIGHT) * 2/5
-#define DESCRIBECROPHEIGHT  60.0f
+#define DESCRIBECROPHEIGHT       60.0f
 
 @interface ScanQRViewController () {
     CGRect      cropRect;
