@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "584AE8341CE06D6B002BA3FF"
-               BuildableName = "ZBarQR.app"
+               BuildableName = "ZBarQR(64 bit).app"
                BlueprintName = "ZBarQR"
                ReferencedContainer = "container:ZBarQR.xcodeproj">
             </BuildableReference>
@@ -53,7 +53,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "584AE8341CE06D6B002BA3FF"
-            BuildableName = "ZBarQR.app"
+            BuildableName = "ZBarQR(64 bit).app"
             BlueprintName = "ZBarQR"
             ReferencedContainer = "container:ZBarQR.xcodeproj">
          </BuildableReference>
@@ -76,7 +76,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "584AE8341CE06D6B002BA3FF"
-            BuildableName = "ZBarQR.app"
+            BuildableName = "ZBarQR(64 bit).app"
             BlueprintName = "ZBarQR"
             ReferencedContainer = "container:ZBarQR.xcodeproj">
          </BuildableReference>
@@ -95,7 +95,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "584AE8341CE06D6B002BA3FF"
-            BuildableName = "ZBarQR.app"
+            BuildableName = "ZBarQR(64 bit).app"
             BlueprintName = "ZBarQR"
             ReferencedContainer = "container:ZBarQR.xcodeproj">
          </BuildableReference>
