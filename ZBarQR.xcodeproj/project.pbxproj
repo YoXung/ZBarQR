@@ -615,6 +615,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 82L8E3T78N;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/ZBarQR/ZBarQR-Prefix.pch";
 				INFOPLIST_FILE = ZBarQR/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -638,6 +639,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 82L8E3T78N;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/ZBarQR/ZBarQR-Prefix.pch";
 				INFOPLIST_FILE = ZBarQR/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
